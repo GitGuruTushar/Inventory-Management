@@ -29,13 +29,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <!-- Exclude default logging to use Log4j2 -->
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
 
         <!-- Spring Boot Starter Data JPA -->
@@ -76,11 +74,6 @@
             <version>2.2.0</version>
         </dependency>
 
-        <!-- Log4j2 Starter -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
-        </dependency>
 
         <!-- Spring Boot Starter Test -->
         <dependency>
@@ -88,20 +81,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
             <!-- Exclude default logging in test scope -->
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
-        <!-- Log4j2 Test Dependency -->
         <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <scope>test</scope>
-        </dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency> 
+
+                    
     </dependencies>
 
     <build>
